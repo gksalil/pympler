@@ -1407,7 +1407,7 @@ try:  # MCCABE 14
         for t in _numpy_types:
             _getsizeof_excls_add(t)
 
-    del d, t, v
+    del d, t, numpy_version
 except ImportError:  # no NumPy
     _numpy_excl = numpy = None  # type: ignore # see function _typedef below
 
